@@ -3,9 +3,9 @@ import './App.css';
 import teamsData from '/Users/mjmikes/Downloads/Classes/IS 413- Enterprise Application Development/Mission 9/React/frontend/src/CollegeBasketballTeams.json';
 
 
-// Functional component for displaying the header of the app
+/* Functional component for displaying the header of the app*/
 function Header() {
-  // Renders a simple heading within a div element
+  /* Renders a simple heading within a div element*/
   return (
     <div>
       <h2>Welcome to the NCAA March Madness Teams Information Page!</h2>
@@ -21,15 +21,15 @@ interface TeamCardProps {
   state: string;
 }
 
-// Functional component to display a single team card
+//Functional component to display a single team card
 // It receives properties as defined in TeamCardProps
 function TeamCard ({school, name, city, state}: TeamCardProps){
   // Renders team information in a card layout
   return (
     <div className = 'card'>
-      <h3>School: {school}</h3> // Displays the school name
-      <p>Mascot: {name}</p> // Displays the team mascot name
-      <p>Location: {city},{state}</p> // Displays the location consisting of city and state
+      <h3>School: {school}</h3> 
+      <p>Mascot: {name}</p> 
+      <p>Location: {city}, {state}</p> 
     </div>
   );
 }
@@ -79,8 +79,8 @@ function TeamList(){
 function App() {
   return (
     <div className="App">
-      <Header /> // Inserting the Header component
-      <TeamList /> // Inserting the TeamList component that includes all TeamCards
+      <Header /> 
+      <TeamList /> 
     </div>
   );
 }
